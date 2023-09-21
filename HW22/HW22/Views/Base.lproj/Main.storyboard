@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VnY-MV-IfF">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Goods-->
+        <scene sceneID="xoi-sp-51h">
+            <objects>
+                <tableViewController id="4av-2E-PjQ" customClass="GoodsTVC" customModule="HW22" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yhv-eR-8e4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.10980392156862745" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="oGA-tH-wKR" detailTextLabel="t7T-7t-u41" imageView="UxO-Rj-yPw" rowHeight="114" style="IBUITableViewCellStyleSubtitle" id="qoz-lT-hvQ">
+                                <rect key="frame" x="0.0" y="50" width="414" height="114"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qoz-lT-hvQ" id="hMx-Yk-s1T">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="iPhone 14 Pro Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oGA-tH-wKR">
+                                            <rect key="frame" x="149" y="16.333333333333336" width="181" height="23.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                            <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t7T-7t-u41">
+                                            <rect key="frame" x="149" y="43.333333333333329" width="80" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <string key="text">1099$
+
+⭐️⭐️⭐️⭐️</string>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                            <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iPhone 14 Pro Max" id="UxO-Rj-yPw">
+                                            <rect key="frame" x="20" y="0.0" width="114" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.10980392156862745" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="mg2-fU-BzV" kind="show" id="mIG-PA-yDs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4av-2E-PjQ" id="4hW-af-W7N"/>
+                            <outlet property="delegate" destination="4av-2E-PjQ" id="jxC-6I-TDS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Goods" id="Sz8-gp-LbI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBH-Hi-OrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.68115942028987" y="36.830357142857139"/>
+        </scene>
+        <!--iPhone 13 Pro-->
+        <scene sceneID="DkN-nM-EJI">
+            <objects>
+                <viewController id="mg2-fU-BzV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nsp-nU-LyN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 13 mini" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-oG-rTt">
+                                <rect key="frame" x="0.0" y="140" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tf1-oG-rTt" secondAttribute="height" multiplier="1:1" id="yAU-AQ-bMP"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="l4S-FM-5sN">
+                                <rect key="frame" x="20" y="564" width="374" height="204.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s2J-tV-FQK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red, 256 ГБ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLh-4D-kst">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="29"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="799$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-aE-Np5">
+                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="29"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️⭐️⭐️⭐️⭐️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVA-tG-plB">
+                                        <rect key="frame" x="0.0" y="59" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vlh-u5-vuG">
+                                        <rect key="frame" x="0.0" y="125" width="374" height="79.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4g-fi-oVa">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34.666666666666664"/>
+                                                <color key="tintColor" red="0.85490196078431369" green="1" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Посмотреть отзывы">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV1-34-LM2">
+                                                <rect key="frame" x="0.0" y="44.666666666666629" width="374" height="34.666666666666657"/>
+                                                <color key="tintColor" red="0.85490196078431369" green="1" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Оставить свой отзыв и рейтинг">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YiK-tQ-LZZ"/>
+                        <color key="backgroundColor" red="0.0" green="0.10980392156862745" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l4S-FM-5sN" firstAttribute="leading" secondItem="YiK-tQ-LZZ" secondAttribute="leading" constant="20" id="5wg-EV-qkD"/>
+                            <constraint firstItem="YiK-tQ-LZZ" firstAttribute="trailing" secondItem="tf1-oG-rTt" secondAttribute="trailing" id="D04-B3-QOq"/>
+                            <constraint firstItem="l4S-FM-5sN" firstAttribute="top" secondItem="tf1-oG-rTt" secondAttribute="bottom" constant="10" id="h8D-t5-Vuf"/>
+                            <constraint firstItem="tf1-oG-rTt" firstAttribute="top" secondItem="YiK-tQ-LZZ" secondAttribute="top" id="osX-fU-0eB"/>
+                            <constraint firstItem="YiK-tQ-LZZ" firstAttribute="trailing" secondItem="l4S-FM-5sN" secondAttribute="trailing" constant="20" id="t4R-vc-YKW"/>
+                            <constraint firstItem="tf1-oG-rTt" firstAttribute="leading" secondItem="YiK-tQ-LZZ" secondAttribute="leading" id="uCO-N7-V5I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="iPhone 13 Pro" id="E6m-tq-5Ly"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BE7-4n-M36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394.6564885496182" y="36.619718309859159"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="prE-eo-iJa">
+            <objects>
+                <navigationController id="VnY-MV-IfF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="l3G-sZ-XMG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4av-2E-PjQ" kind="relationship" relationship="rootViewController" id="qE0-dB-cDT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8t7-da-low" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iPhone 13 mini" width="540" height="540"/>
+        <image name="iPhone 14 Pro Max" width="540" height="540"/>
+    </resources>
+</document>
