@@ -18,7 +18,14 @@ class GoodDetailVC: UIViewController {
     @IBOutlet weak var colorGoodLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var buttonShowOutlet: UIButton!
-    @IBOutlet weak var cosmosView: CosmosView!
+    @IBOutlet weak var cosmosView: CosmosView! {
+        didSet {
+            cosmosView.settings.updateOnTouch = false
+            cosmosView.settings.fillMode = .half
+            cosmosView.settings.starSize = 30
+            cosmosView.settings.starMargin = 5.3
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +43,6 @@ class GoodDetailVC: UIViewController {
         imageViewOutlet.image = good.image
         priceLabel.text = good.price.description + " $"
         colorGoodLabel.text = good.colorAndRAM
-        cosmosView.settings.updateOnTouch = false
-        cosmosView.settings.fillMode = .half
-        cosmosView.settings.starSize = 30
-        cosmosView.settings.starMargin = 5.3
     }
     
     
