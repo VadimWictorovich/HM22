@@ -13,15 +13,10 @@ class GoodsTVC: UITableViewController {
         GoodsData.shared.goods
     }
     
-
-    // MARK: - Table view data source
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         goods.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let good = goods[indexPath.row]

@@ -13,6 +13,7 @@
 		6C3A81232AC208F300E367B5 /* ReviewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3A81222AC208F300E367B5 /* ReviewTVC.swift */; };
 		6C3A81252AC20B9200E367B5 /* LeaveReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3A81242AC20B9200E367B5 /* LeaveReviewVC.swift */; };
 		6C5528562AC2E880009371C6 /* CellReviewFeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5528552AC2E880009371C6 /* CellReviewFeedbackTableViewCell.swift */; };
+		6C5528582AC4C74F009371C6 /* ExtentionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5528572AC4C74F009371C6 /* ExtentionVC.swift */; };
 		6CA1CD602ABCCE6500A7FD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1CD5F2ABCCE6500A7FD05 /* AppDelegate.swift */; };
 		6CA1CD622ABCCE6500A7FD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1CD612ABCCE6500A7FD05 /* SceneDelegate.swift */; };
 		6CA1CD672ABCCE6500A7FD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA1CD652ABCCE6500A7FD05 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		6C3A81222AC208F300E367B5 /* ReviewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTVC.swift; sourceTree = "<group>"; };
 		6C3A81242AC20B9200E367B5 /* LeaveReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveReviewVC.swift; sourceTree = "<group>"; };
 		6C5528552AC2E880009371C6 /* CellReviewFeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReviewFeedbackTableViewCell.swift; sourceTree = "<group>"; };
+		6C5528572AC4C74F009371C6 /* ExtentionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionVC.swift; sourceTree = "<group>"; };
 		6CA1CD5C2ABCCE6500A7FD05 /* HW22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA1CD5F2ABCCE6500A7FD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CA1CD612ABCCE6500A7FD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				6C3A81192AC1F4FC00E367B5 /* GoodsData.swift */,
 				6C3A811D2AC2005E00E367B5 /* CellManager.swift */,
+				6C5528572AC4C74F009371C6 /* ExtentionVC.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				6CA1CD7B2ABCDEF600A7FD05 /* GoodsTVC.swift in Sources */,
 				6C3A81252AC20B9200E367B5 /* LeaveReviewVC.swift in Sources */,
 				6CA1CD602ABCCE6500A7FD05 /* AppDelegate.swift in Sources */,
+				6C5528582AC4C74F009371C6 /* ExtentionVC.swift in Sources */,
 				6CA1CD762ABCD27B00A7FD05 /* Good.swift in Sources */,
 				6CA1CD792ABCD40C00A7FD05 /* Feedback.swift in Sources */,
 				6CA1CD622ABCCE6500A7FD05 /* SceneDelegate.swift in Sources */,

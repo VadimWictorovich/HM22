@@ -5,24 +5,21 @@
 //  Created by Вадим Игнатенко on 26.09.23.
 //
 
-import UIKit
 import Cosmos
+import UIKit
 
 class CellReviewFeedbackTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var namelabel: UILabel!
-    @IBOutlet weak var textFeetback: UILabel!
-    @IBOutlet weak var dateFeetbackLabel: UILabel!
-    @IBOutlet weak var cosmosView: CosmosView!
-    
-    
+    @IBOutlet var namelabel: UILabel!
+    @IBOutlet var textFeetback: UILabel!
+    @IBOutlet var dateFeetbackLabel: UILabel!
+    @IBOutlet var cosmosView: CosmosView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
-
 }
