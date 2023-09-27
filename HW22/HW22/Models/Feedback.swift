@@ -7,10 +7,8 @@
 
 import Foundation
 
-
 struct Feedback {
-    
-    private let date = Date()
-    private let text: String
-    private let mark: Double    
+    var date = Date()
+    var text: String
+    var mark: Double
 }
