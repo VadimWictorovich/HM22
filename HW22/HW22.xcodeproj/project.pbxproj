@@ -78,21 +78,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		6C3A811F2AC2082000E367B5 /* Feedback */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Feedback;
-			sourceTree = "<group>";
-		};
-		6C3A81202AC2084000E367B5 /* Reviews */ = {
+		6C3A81202AC2084000E367B5 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
 				6C3A81212AC2088300E367B5 /* Cell */,
 				6C3A81222AC208F300E367B5 /* ReviewTVC.swift */,
 				6C3A81242AC20B9200E367B5 /* LeaveReviewVC.swift */,
 			);
-			path = Reviews;
+			path = Feedback;
 			sourceTree = "<group>";
 		};
 		6C3A81212AC2088300E367B5 /* Cell */ = {
@@ -167,8 +160,7 @@
 			children = (
 				6CA1CD7A2ABCDEF600A7FD05 /* GoodsTVC.swift */,
 				6C3A811B2AC1FE1700E367B5 /* GoodDetailVC.swift */,
-				6C3A811F2AC2082000E367B5 /* Feedback */,
-				6C3A81202AC2084000E367B5 /* Reviews */,
+				6C3A81202AC2084000E367B5 /* Feedback */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

@@ -10,8 +10,9 @@ import UIKit
 struct Good {
     let name: String
     let price: Double
+    //let rating: Double
     let image: UIImage?
-    let rating = "⭐️⭐️⭐️⭐️⭐️"
     let colorAndRAM: String?
     var feedback: [Feedback] = []
+    var ratings: [Double] = []
 }

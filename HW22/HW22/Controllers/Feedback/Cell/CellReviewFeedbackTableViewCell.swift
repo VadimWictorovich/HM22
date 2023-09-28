@@ -13,13 +13,5 @@ class CellReviewFeedbackTableViewCell: UITableViewCell {
     @IBOutlet var namelabel: UILabel!
     @IBOutlet var textFeetback: UILabel!
     @IBOutlet var dateFeetbackLabel: UILabel!
-    @IBOutlet var cosmosView: CosmosView!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+    @IBOutlet var cosmosView: CosmosView! { didSet { cosmosView.settings.updateOnTouch = false } }
 }

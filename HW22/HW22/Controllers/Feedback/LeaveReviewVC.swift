@@ -43,6 +43,7 @@ class LeaveReviewVC: UIViewController {
                             mark: cosmosView.rating)
         guard let ind = index else { return }
         data.goods[ind].feedback.append(feed)
+        data.goods[ind].ratings.append(feed.mark)
         navigationController?.popViewController(animated: true)
     }
 }

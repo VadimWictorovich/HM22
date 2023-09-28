@@ -13,7 +13,7 @@ class CellManager {
     
     static func configure (cell: UITableViewCell,with good: Good) {
         cell.textLabel?.text = good.name
-        cell.detailTextLabel?.text = String(good.price) + " $\n" + good.rating
+        cell.detailTextLabel?.text = String(good.price) + " $"
         cell.imageView?.image = good.image
     }
 }
