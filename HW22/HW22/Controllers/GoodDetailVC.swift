@@ -5,8 +5,8 @@
 //  Created by Вадим Игнатенко on 25.09.23.
 //
 
-import UIKit
 import Cosmos
+import UIKit
 
 class GoodDetailVC: UIViewController {
     
@@ -14,11 +14,11 @@ class GoodDetailVC: UIViewController {
     var good: Good {
         GoodsData.shared.goods[index]
     }
-    @IBOutlet private weak var imageViewOutlet: UIImageView!
-    @IBOutlet private weak var colorGoodLabel: UILabel!
-    @IBOutlet private weak var priceLabel: UILabel!
-    @IBOutlet private weak var buttonShowOutlet: UIButton!
-    @IBOutlet weak var cosmosView: CosmosView!
+    @IBOutlet private var imageViewOutlet: UIImageView!
+    @IBOutlet private var colorGoodLabel: UILabel!
+    @IBOutlet private var priceLabel: UILabel!
+    @IBOutlet private var buttonShowOutlet: UIButton!
+    @IBOutlet var cosmosView: CosmosView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +51,19 @@ class GoodDetailVC: UIViewController {
         updateUI(with: size)
     }
     
-    
-    
     @IBAction func showReviewAction(_ sender: UIButton) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        guard let vc = sb.instantiateViewController(withIdentifier: "ReviewTVC") as? ReviewTVC else { return }
-        vc.index = self.index
-        navigationController?.pushViewController(vc, animated: true)
+        if cosmosView.rating != 0.0 {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            guard let vc = sb.instantiateViewController(withIdentifier: "ReviewTVC") as? ReviewTVC else { return }
+            vc.index = self.index
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let alert = UIAlertController(title: "ОШИБКА",
+                                          message: "Отзывы о данном устройстве отсутствуют!",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func leaveReviewAction(_ sender: UIButton) {

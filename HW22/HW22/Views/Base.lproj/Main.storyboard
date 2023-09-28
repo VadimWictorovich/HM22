@@ -347,17 +347,6 @@
             <point key="canvasLocation" x="-266" y="38"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="KJO-42-H6z">
-            <size key="intrinsicContentSize" width="120" height="20"/>
-        </designable>
-        <designable name="UEi-ZP-0Zn">
-            <size key="intrinsicContentSize" width="120" height="20"/>
-        </designable>
-        <designable name="eSw-ke-iLW">
-            <size key="intrinsicContentSize" width="120" height="20"/>
-        </designable>
-    </designables>
     <resources>
         <image name="iPhone 13 mini" width="540" height="540"/>
         <systemColor name="systemBackgroundColor">
