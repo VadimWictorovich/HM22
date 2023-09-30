@@ -8,7 +8,7 @@
 import Cosmos
 import UIKit
 
-class GoodDetailVC: UIViewController {
+final class GoodDetailVC: UIViewController {
     
     var index: Int!
     var good: Good {
@@ -18,6 +18,7 @@ class GoodDetailVC: UIViewController {
     @IBOutlet private var colorGoodLabel: UILabel!
     @IBOutlet private var priceLabel: UILabel!
     @IBOutlet private var buttonShowOutlet: UIButton!
+    @IBOutlet private weak var stackview: UIStackView!
     @IBOutlet var cosmosView: CosmosView!
     
     override func viewDidLoad() {
@@ -31,7 +32,7 @@ class GoodDetailVC: UIViewController {
     
     private func updateUI(with size: CGSize) {
         let isVertical = size.width < size.height
-        // stecview.axis = isVertical ? .vertical : .horizontal
+        stackview.axis = isVertical ? .vertical : .horizontal
         title = good.name
         imageViewOutlet.image = good.image
         priceLabel.text = good.price.description + " $"
