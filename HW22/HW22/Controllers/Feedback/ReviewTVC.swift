@@ -7,10 +7,9 @@
 
 import UIKit
 
-class ReviewTVC: UITableViewController {
-    
+final class ReviewTVC: UITableViewController {
     var index: Int!
-    var feedback: [Feedback] {
+    private var feedback: [Feedback] {
         GoodsData.shared.goods[index].feedback
     }
 

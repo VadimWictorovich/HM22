@@ -9,17 +9,17 @@ import Cosmos
 import UIKit
 
 final class GoodDetailVC: UIViewController {
-    
     var index: Int!
-    var good: Good {
+    private var good: Good {
         GoodsData.shared.goods[index]
     }
-    @IBOutlet private var imageViewOutlet: UIImageView!
-    @IBOutlet private var colorGoodLabel: UILabel!
-    @IBOutlet private var priceLabel: UILabel!
-    @IBOutlet private var buttonShowOutlet: UIButton!
+
+    @IBOutlet private weak var imageViewOutlet: UIImageView!
+    @IBOutlet private weak var colorGoodLabel: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var buttonShowOutlet: UIButton!
     @IBOutlet private weak var stackview: UIStackView!
-    @IBOutlet var cosmosView: CosmosView!
+    @IBOutlet private weak var cosmosView: CosmosView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,10 @@ final class GoodDetailVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupUICosmos()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        updateUI(with: size)
     }
     
     private func updateUI(with size: CGSize) {
@@ -48,11 +52,7 @@ final class GoodDetailVC: UIViewController {
         cosmosView.settings.starMargin = 5.3
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        updateUI(with: size)
-    }
-    
-    @IBAction func showReviewAction(_ sender: UIButton) {
+    @IBAction private func showReviewAction() {
         if cosmosView.rating != 0.0 {
             let sb = UIStoryboard(name: "Main", bundle: nil)
             guard let vc = sb.instantiateViewController(withIdentifier: "ReviewTVC") as? ReviewTVC else { return }
@@ -67,7 +67,7 @@ final class GoodDetailVC: UIViewController {
         }
     }
     
-    @IBAction func leaveReviewAction(_ sender: UIButton) {
+    @IBAction private func leaveReviewAction() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: "LeaveReviewVC") as? LeaveReviewVC else { return }
         vc.index = self.index

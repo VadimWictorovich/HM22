@@ -20,7 +20,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="oGA-tH-wKR" detailTextLabel="t7T-7t-u41" imageView="UxO-Rj-yPw" rowHeight="114" style="IBUITableViewCellStyleSubtitle" id="qoz-lT-hvQ">
                                 <rect key="frame" x="0.0" y="50" width="414" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qoz-lT-hvQ" id="hMx-Yk-s1T">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qoz-lT-hvQ" id="hMx-Yk-s1T">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -41,7 +41,7 @@
                                             <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="UxO-Rj-yPw">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UxO-Rj-yPw">
                                             <rect key="frame" x="20" y="0.0" width="114" height="114"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -129,7 +129,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="Посмотреть отзывы"/>
                                                         <connections>
-                                                            <action selector="showReviewAction:" destination="mg2-fU-BzV" eventType="touchUpInside" id="dg8-Y2-o5U"/>
+                                                            <action selector="showReviewAction" destination="mg2-fU-BzV" eventType="touchUpInside" id="6Iz-9l-vJJ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVe-Uk-RMw">
@@ -142,7 +142,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="Оставить свой отзыв"/>
                                                         <connections>
-                                                            <action selector="leaveReviewAction:" destination="mg2-fU-BzV" eventType="touchUpInside" id="j55-DE-FJ3"/>
+                                                            <action selector="leaveReviewAction" destination="mg2-fU-BzV" eventType="touchUpInside" id="TPj-jL-LwL"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -188,7 +188,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u3c-a2-oiL">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="93.5"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="1234" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="No0-nK-Arb">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="No0-nK-Arb">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="93.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>

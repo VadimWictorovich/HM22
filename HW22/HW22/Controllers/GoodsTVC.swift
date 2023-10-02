@@ -7,12 +7,12 @@
 
 import UIKit
 
-class GoodsTVC: UITableViewController {
-
-    var goods: [Good] {
+final class GoodsTVC: UITableViewController {
+    
+    private var goods: [Good] {
         GoodsData.shared.goods
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         goods.count
     }
@@ -23,7 +23,7 @@ class GoodsTVC: UITableViewController {
         CellManager.configure(cell: cell, with: good)
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         guard

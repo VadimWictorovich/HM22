@@ -8,8 +8,7 @@
 import Cosmos
 import UIKit
 
-class CellReviewFeedbackTableViewCell: UITableViewCell {
-    
+final class CellReviewFeedbackTableViewCell: UITableViewCell {
     @IBOutlet var namelabel: UILabel!
     @IBOutlet var textFeetback: UILabel!
     @IBOutlet var dateFeetbackLabel: UILabel!

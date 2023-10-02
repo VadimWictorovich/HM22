@@ -8,12 +8,30 @@
 import Foundation
 import UIKit
 
-
-class CellManager {
-    
-    static func configure (cell: UITableViewCell,with good: Good) {
+final class CellManager {
+    static func configure(cell: UITableViewCell, with good: Good) {
+        
+        let image = good.image
+        let targetSize = CGSize(width: 100, height: 100)
         cell.textLabel?.text = good.name
         cell.detailTextLabel?.text = String(good.price) + " $"
-        cell.imageView?.image = good.image
+
+        func resizeImage(image: UIImage?, targetSize: CGSize) -> UIImage? {
+            guard let image = image else {
+                return nil
+            }
+            UIGraphicsBeginImageContext(targetSize)
+            image.draw(in: CGRect(origin: CGPoint.zero, size: targetSize))
+            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+
+            return resizedImage
+        }
+
+        if let resizedImage = resizeImage(image: image, targetSize: targetSize) {
+            cell.imageView?.image = resizedImage
+        } else {
+            cell.imageView?.image = nil
+        }
     }
 }

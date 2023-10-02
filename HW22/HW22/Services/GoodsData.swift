@@ -8,7 +8,7 @@
 import Foundation
 
 
-class GoodsData {
+final class GoodsData {
     
     static let shared = GoodsData()
     var goods: [Good]

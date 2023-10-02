@@ -8,13 +8,13 @@
 import Cosmos
 import UIKit
 
-class LeaveReviewVC: UIViewController {
+final class LeaveReviewVC: UIViewController {
     var index: Int!
-    let data = GoodsData.shared
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var cenretConsrtaint: NSLayoutConstraint!
-    @IBOutlet weak var textOut: UITextView!
-    @IBOutlet weak var cosmosView: CosmosView! { didSet { cosmosView.settings.starSize = 40 } }
+    private let data = GoodsData.shared
+    @IBOutlet private weak var textField: UITextField!
+    @IBOutlet private weak var cenretConsrtaint: NSLayoutConstraint!
+    @IBOutlet private weak var textOut: UITextView!
+    @IBOutlet private weak var cosmosView: CosmosView! { didSet { cosmosView.settings.starSize = 40 } }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +37,14 @@ class LeaveReviewVC: UIViewController {
         cenretConsrtaint.constant += keyboardSize.height / 2
     }
     
-    @IBAction func saveAction() {
-        let feed = Feedback(text: textOut.text,
-                            userName: textField.text ?? "Anonim",
+    @IBAction private func saveAction() {
+        guard
+            let text = textOut.text.isEmpty ? "No commets" : textOut.text,
+            let name = textField.text!.isEmpty ? "Anonim" : textField.text
+        else { return }
+        
+        let feed = Feedback(text: text,
+                            userName: name,
                             mark: cosmosView.rating)
         guard let ind = index else { return }
         data.goods[ind].feedback.append(feed)
